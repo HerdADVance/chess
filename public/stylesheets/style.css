@@ -1,0 +1,32 @@
+*{
+	box-sizing: border-box;
+	border-collapse: collapse;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container{
+	margin: 0px auto;
+	width: 640px;
+}
+.container div{
+	background: palegreen;
+	border: 1px solid #999;
+	cursor: pointer;
+	float: left;
+	height: 80px;
+	width: 80px;
+}
+.container div.even{
+	background: lightyellow;
+}
+.container div:hover{
+	opacity: 0.75;
+}

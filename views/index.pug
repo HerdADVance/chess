@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  
+	div(class='container')
+		- for (var x=8; x>0; x--)
+			- xValue = 1
+			- for (var y=8; y>0; y--)
+				- var even = 'odd'
+				- if ((xValue + x)%2 == 0)
+					- even = 'even'
+				div(class=even data-x=xValue data-y=x)
+				- xValue ++
