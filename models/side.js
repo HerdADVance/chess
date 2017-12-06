@@ -5,8 +5,7 @@ var SideSchema = new Schema({
 	player: { type: Schema.Types.ObjectId, ref: 'Player' },
 	white: Boolean,
 	toAct: Boolean,
-	pieces: [],
-	captured: []
+	pieces: []
 });
 
 module.exports = mongoose.model('Side', SideSchema);
