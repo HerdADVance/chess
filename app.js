@@ -43,4 +43,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+var Game = require('./models/game.js');
+var gameInstance = new Game();
+console.log('GAME: ' + gameInstance);
+
 module.exports = app;
