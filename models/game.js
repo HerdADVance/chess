@@ -3,8 +3,8 @@ var Schema = mongoose.Schema;
 
 var GameSchema = new Schema({
 	status: { type: String, default: 'Waiting' },
-	sideOne: { type: Schema.Types.ObjectId, ref: 'Side' },
-	sideTwo: { type: Schema.Types.ObjectId, ref: 'Side' },
+	white: { type: Schema.Types.ObjectId, ref: 'Side' },
+	black: { type: Schema.Types.ObjectId, ref: 'Side' },
 	moves: []
 });
 
