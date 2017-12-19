@@ -16,8 +16,8 @@ a {
 	margin: 0px auto;
 	width: 640px;
 }
-.container div{
-	background: palegreen;
+.square{
+	background: saddlebrown;
 	border: 1px solid #999;
 	cursor: pointer;
 	float: left;
@@ -27,6 +27,22 @@ a {
 .container div.even{
 	background: lightyellow;
 }
-.container div:hover{
+.square:hover{
 	opacity: 0.75;
+}
+
+.vertical{
+	left: 0;
+	position: absolute;
+}
+.number{
+	display: inline-block;
+	font-size: 24px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	width: 80px;
+}
+.vertical .number{
+	display: block;
 }

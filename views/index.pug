@@ -9,5 +9,11 @@ block content
 				- var even = 'odd'
 				- if ((xValue + x)%2 == 0)
 					- even = 'even'
-				div(class=even data-x=xValue data-y=x)
+				div(class=[even, 'square']  data-x=xValue data-y=x)
 				- xValue ++
+		div(class='vertical')
+			- for (var x=1; x<9; x++)
+				div(class='number')= x
+		div(class='horizontal')
+			- for (var x=1; x<9; x++)
+				div(class='number')= x

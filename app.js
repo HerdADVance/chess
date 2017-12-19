@@ -44,7 +44,24 @@ app.use(function(err, req, res, next) {
 });
 
 var Game = require('./models/game.js');
-var gameInstance = new Game();
-console.log('GAME: ' + gameInstance);
+var Side = require('./models/side.js');
+var Piece = require('./models/piece.js');
+
+var sideOne = new Side();
+var sideTwo = new Side();
+var newGame = new Game();
+
+
+sideOne.pieces.push("A");
+
+newGame.sideOne = sideOne;
+newGame.sideTwo = sideTwo;
+
+console.log('GAME: ' + newGame);
+console.log('SIDE 1: ' + newGame.sideOne);
 
 module.exports = app;
+
+
+
+
