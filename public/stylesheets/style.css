@@ -17,18 +17,21 @@ a {
 	width: 640px;
 }
 .square{
-	background: saddlebrown;
+	background: peru;
 	border: 1px solid #999;
 	cursor: pointer;
 	float: left;
 	height: 80px;
 	width: 80px;
 }
-.container div.even{
-	background: lightyellow;
+.square.even{
+	background: wheat;
 }
 .square:hover{
-	opacity: 0.75;
+	opacity: 0.9;
+}
+.square img{
+	width: 75px;	
 }
 
 .vertical{

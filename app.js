@@ -46,13 +46,18 @@ app.use(function(err, req, res, next) {
 var Game = require('./models/game.js');
 var Side = require('./models/side.js');
 var Piece = require('./models/piece.js');
+var White = require('./models/white.js');
+//var Black = require('./models/black.js');
 
 var sideOne = new Side();
 var sideTwo = new Side();
 var newGame = new Game();
+var white = new White();
+
+console.log("WHITE: " + white.rook);
 
 
-sideOne.pieces.push("A");
+sideOne.pieces.push(white);
 
 newGame.sideOne = sideOne;
 newGame.sideTwo = sideTwo;
